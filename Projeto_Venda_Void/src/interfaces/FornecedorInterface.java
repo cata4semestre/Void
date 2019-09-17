@@ -25,7 +25,7 @@ public class FornecedorInterface extends AbstractTableModel {
 
     @Override
     public int getColumnCount() {
-        return 5;
+        return 6;
     }
 
     @Override
@@ -38,8 +38,10 @@ public class FornecedorInterface extends AbstractTableModel {
             case 2:
                 return fornecedor.get(rowIndex).getCnpj();
             case 3:
-                return fornecedor.get(rowIndex).getTelefone_a();
+                return fornecedor.get(rowIndex).getProdutos();
             case 4:
+                return fornecedor.get(rowIndex).getTelefone_a();
+            case 5:
                 return fornecedor.get(rowIndex).getTelefone_b();
 
         }
@@ -56,8 +58,10 @@ public class FornecedorInterface extends AbstractTableModel {
             case 2:
                 return "CNPJ";
             case 3:
-                return "Telefone 1";
+                return "Produtos";
             case 4:
+                return "Telefone 1";
+            case 5:
                 return "Telefone 2";
 
         }

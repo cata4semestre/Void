@@ -35,7 +35,7 @@ public class Produto implements Serializable {
     @OneToMany(mappedBy = "produto")
     private List<Vendas> vendas = new ArrayList();
     @OneToMany(mappedBy = "produto")
-    private List<Solitacao> solicitacao = new ArrayList();
+    private List<Solicitacao> solicitacao = new ArrayList();
     
     
 
@@ -129,11 +129,11 @@ public class Produto implements Serializable {
         this.vendas = vendas;
     }
 
-    public List<Solitacao> getSolicitacao() {
+    public List<Solicitacao> getSolicitacao() {
         return solicitacao;
     }
 
-    public void setSolicitacao(List<Solitacao> solicitacao) {
+    public void setSolicitacao(List<Solicitacao> solicitacao) {
         this.solicitacao = solicitacao;
     }
 

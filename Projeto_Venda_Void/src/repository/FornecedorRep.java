@@ -34,10 +34,4 @@ public class FornecedorRep extends Fornecedor {
         List<Fornecedor> fornecedor = ConexaoBD.getEm().createQuery("select f from Fornecedor f").getResultList();
         return fornecedor;
     }
-    public Fornecedor buscarPorID(int id) {
-        return ConexaoBD.getEm().find(Fornecedor.class, id);
-    }
-    
-/*clica no botao produtos
-select * from tbl_produtos where id_fornecedor = this.id_fornecedor*/
 }
