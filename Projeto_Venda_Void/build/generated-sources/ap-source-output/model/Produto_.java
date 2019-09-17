@@ -10,7 +10,7 @@ import model.Fornecedor;
 import model.Solitacao;
 import model.Vendas;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2019-09-16T18:55:18")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2019-09-16T19:52:36")
 @StaticMetamodel(Produto.class)
 public class Produto_ { 
 

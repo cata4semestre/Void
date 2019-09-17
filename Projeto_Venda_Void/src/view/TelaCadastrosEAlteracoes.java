@@ -106,11 +106,6 @@ public class TelaCadastrosEAlteracoes extends javax.swing.JFrame {
         txtQuantidade = new javax.swing.JTextField();
         txtNomeProduto = new javax.swing.JTextField();
         txtIdProdutos = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         pnFornecedores = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         tblFornecedor = new javax.swing.JTable();
@@ -118,6 +113,7 @@ public class TelaCadastrosEAlteracoes extends javax.swing.JFrame {
         txtNomeFornecedor = new javax.swing.JTextField();
         txtTelefon_a = new javax.swing.JTextField();
         txtTelefone_b = new javax.swing.JTextField();
+        txtIdFornecedor = new javax.swing.JTextField();
         pnClientes = new javax.swing.JPanel();
         txtCPFCliente = new javax.swing.JTextField();
         txtNomeCliente = new javax.swing.JTextField();
@@ -185,64 +181,41 @@ public class TelaCadastrosEAlteracoes extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("Cod Fornecedor");
-
-        jLabel2.setText("Nome do Produto");
-
-        jLabel3.setText("Qtde Estoque");
-
-        jLabel4.setText("Preço Custo");
-
-        jLabel5.setText("Preço Venda");
-
         javax.swing.GroupLayout pnProdutosLayout = new javax.swing.GroupLayout(pnProdutos);
         pnProdutos.setLayout(pnProdutosLayout);
         pnProdutosLayout.setHorizontalGroup(
             pnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnProdutosLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(pnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtIdProdutos))
-                .addGap(18, 18, 18)
-                .addGroup(pnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtNomeProduto))
-                .addGap(18, 18, 18)
-                .addGroup(pnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtQuantidade))
-                .addGap(18, 18, 18)
-                .addGroup(pnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtPC))
-                .addGap(18, 18, 18)
-                .addGroup(pnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtPV))
-                .addGap(7, 244, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnProdutosLayout.createSequentialGroup()
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 654, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnProdutosLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(txtIdProdutos, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtNomeProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtQuantidade, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtPC, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtPV, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 654, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 16, Short.MAX_VALUE))
         );
+
+        pnProdutosLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {txtNomeProduto, txtPC, txtPV, txtQuantidade});
+
         pnProdutosLayout.setVerticalGroup(
             pnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnProdutosLayout.createSequentialGroup()
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
                 .addGroup(pnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(pnProdutosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtIdProdutos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtNomeProduto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtQuantidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtPC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtPV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(txtPV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtIdProdutos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
 
         pnProdutosLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {txtNomeProduto, txtPC, txtPV, txtQuantidade});
@@ -265,18 +238,14 @@ public class TelaCadastrosEAlteracoes extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(tblFornecedor);
 
-        txtTelefon_a.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtTelefon_aActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout pnFornecedoresLayout = new javax.swing.GroupLayout(pnFornecedores);
         pnFornecedores.setLayout(pnFornecedoresLayout);
         pnFornecedoresLayout.setHorizontalGroup(
             pnFornecedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnFornecedoresLayout.createSequentialGroup()
                 .addContainerGap()
+                .addComponent(txtIdFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(txtNomeFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(txtCnpj, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -302,7 +271,8 @@ public class TelaCadastrosEAlteracoes extends javax.swing.JFrame {
                     .addComponent(txtNomeFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtCnpj, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtTelefon_a, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtTelefone_b, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtTelefone_b, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtIdFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -487,6 +457,12 @@ public class TelaCadastrosEAlteracoes extends javax.swing.JFrame {
         btnAlterar.setVisible(true);
         btnDeletar.setVisible(true);
         btnCancelar.setVisible(true);
+        txtIdClientes.setVisible(true);
+        txtIdFornecedor.setVisible(true);
+        txtIdProdutos.setVisible(true);
+        txtIdClientes.setEditable(false);
+        txtIdFornecedor.setEditable(false);
+        txtIdProdutos.setEditable(false);
     }//GEN-LAST:event_btnAtualizarActionPerformed
 
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
@@ -496,30 +472,31 @@ public class TelaCadastrosEAlteracoes extends javax.swing.JFrame {
         rBtnCliente.setVisible(true);
         rBtnFornecedor.setVisible(true);
         rBtnProduto.setVisible(true);
-
         btnCancelar.setVisible(true);
         btnConfirmCadastrar.setVisible(true);
+        txtIdClientes.setVisible(false);
+        txtIdFornecedor.setVisible(false);
+        txtIdProdutos.setVisible(false);
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
     private void btnConfirmCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfirmCadastrarActionPerformed
 
         if (rBtnCliente.isSelected()) {
             Cliente cli = new Cliente();
-            
+
             cli.setNomeCliente(txtNomeCliente.getText());
             cli.setCpf(txtCPFCliente.getText());
 
             ClienteRep crep = new ClienteRep();
-            crep.salvar(cli);
+            crep.adicionar(cli);
 
             JOptionPane.showMessageDialog(null, txtNomeCliente.getText() + " Cliente cadastrado com sucesso!");
             refreshClientesTable();
 
-            txtCPFCliente.setText("");
-            txtNomeCliente.setText("");
+            txtCPFCliente.setText(null);
+            txtNomeCliente.setText(null);
 
         } else if (rBtnProduto.isSelected()) {
-            
 
             Produto produto = new Produto();
 
@@ -530,13 +507,13 @@ public class TelaCadastrosEAlteracoes extends javax.swing.JFrame {
             produto.setFornecedor(produto.getFornecedor());
 
             ProdutoRep addProduto = new ProdutoRep();
-            addProduto.salvar(produto);
+            addProduto.adicionar(produto);
 
             JOptionPane.showMessageDialog(null, txtNomeProduto.getText() + " Produto cadastrado com sucesso!");
             refreshProdutosTable();
 
         } else if (rBtnFornecedor.isSelected()) {
-            
+
             Fornecedor fornecedor = new Fornecedor();
 
             fornecedor.setNomeFornecedor(txtNomeFornecedor.getText());
@@ -545,9 +522,9 @@ public class TelaCadastrosEAlteracoes extends javax.swing.JFrame {
             fornecedor.setTelefone_b(txtTelefone_b.getText());
 
             FornecedorRep fornecedorRep = new FornecedorRep();
-            fornecedorRep.salvar(fornecedor);
+            fornecedorRep.adicionar(fornecedor);
 
-            JOptionPane.showMessageDialog(null, txtNomeCliente.getText() + " Cliente cadastrado com sucesso!");
+            JOptionPane.showMessageDialog(null, txtNomeCliente.getText() + " Fornecedor cadastrado com sucesso!");
             refreshFornecedoresTable();
         }
     }//GEN-LAST:event_btnConfirmCadastrarActionPerformed
@@ -567,18 +544,22 @@ public class TelaCadastrosEAlteracoes extends javax.swing.JFrame {
             refreshClientesTable();
             JOptionPane.showMessageDialog(null, txtNomeCliente.getText() + " Cliente Deletado!");
 
-            txtCPFCliente.setText("");
-            txtNomeCliente.setText("");
+            txtCPFCliente.setText(null);
+            txtNomeCliente.setText(null);
+            txtIdClientes.setText(null);
 
         } else if (rBtnFornecedor.isSelected()) {
-
-            Fornecedor fornecedor = new Fornecedor();
-
             FornecedorRep deletarFornecedor = new FornecedorRep();
-            deletarFornecedor.excluir(fornecedor);
+            deletarFornecedor.excluir(deletarFornecedor.buscarPorID(Integer.parseInt(txtIdFornecedor.getText())));
 
             refreshFornecedoresTable();
             JOptionPane.showMessageDialog(null, txtNomeFornecedor.getText() + " Fornecedor Deletado!");
+
+            txtIdFornecedor.setText(null);
+            txtNomeFornecedor.setText(null);
+            txtTelefon_a.setText(null);
+            txtTelefone_b.setText(null);
+            txtCnpj.setText(null);
 
         } else if (rBtnProduto.isSelected()) {
             ProdutoRep deletarProduto = new ProdutoRep();
@@ -587,43 +568,56 @@ public class TelaCadastrosEAlteracoes extends javax.swing.JFrame {
             refreshProdutosTable();
             JOptionPane.showMessageDialog(null, txtNomeProduto.getText() + " Produto Deletado!");
 
+            txtIdProdutos.setText(null);
+            txtNomeProduto.setText(null);
+            txtPC.setText(null);
+            txtPV.setText(null);
+            txtQuantidade.setText(null);
         }
     }//GEN-LAST:event_btnDeletarActionPerformed
 
     private void btnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAlterarActionPerformed
-
+        
         if (rBtnCliente.isSelected()) {
-            Cliente cli = new Cliente();
-            cli.setIdCliente(Integer.parseInt(txtIdClientes.getText()));
-            cli.setNomeCliente(txtNomeCliente.getText());
-            cli.setCpf(txtCPFCliente.getText());
-            ClienteRep crep = new ClienteRep();
-            crep.salvar(cli);
+            if (txtIdClientes.getText() != null) {
+                
+                Cliente cli = new Cliente();
+                cli.setIdCliente(Integer.parseInt(txtIdClientes.getText()));
+                cli.setNomeCliente(txtNomeCliente.getText());
+                cli.setCpf(txtCPFCliente.getText());
+                ClienteRep crep = new ClienteRep();
+                crep.salvar(cli);
 
-            JOptionPane.showMessageDialog(null, txtNomeCliente.getText() + " Alterado com sucesso!");
-
+                JOptionPane.showMessageDialog(null, txtNomeCliente.getText() + " Alterado com sucesso!");
+            }else{
+             JOptionPane.showMessageDialog(null, txtNomeCliente.getText() + " Cliente nao selecionado ");   
+            }
         }
         if (rBtnProduto.isSelected()) {
-            
-
+            if (txtIdProdutos.getText() != null) {
             Produto produto = new Produto();
             produto.setIdproduto(Integer.parseInt(txtIdProdutos.getText()));
             produto.setNomeProduto(txtNomeProduto.getText());
             produto.setQtdEstoque(Integer.parseInt(txtQuantidade.getText()));
             produto.setPrecoCusto(BigDecimal.valueOf(Double.parseDouble(txtPC.getText())));
             produto.setPrecoVenda(BigDecimal.valueOf(Double.parseDouble(txtPV.getText())));
-            produto.setFornecedor(produto.getFornecedor());
 
             ProdutoRep addProduto = new ProdutoRep();
             addProduto.salvar(produto);
-
+            
             JOptionPane.showMessageDialog(null, txtNomeProduto.getText() + " Alterado com sucesso!");
+            }else{
+             JOptionPane.showMessageDialog(null, txtNomeProduto.getText() + " Produto nao selecionado ");   
+            }
+            
 
         }
         if (rBtnFornecedor.isSelected()) {
-            
-            Fornecedor fornecedor = new Fornecedor();
 
+         if(txtIdFornecedor.getText() != null){  
+            Fornecedor fornecedor = new Fornecedor();
+            
+            fornecedor.setIdFornecedor(Integer.parseInt(txtIdFornecedor.getText()));
             fornecedor.setNomeFornecedor(txtNomeFornecedor.getText());
             fornecedor.setCnpj(txtCnpj.getText());
             fornecedor.setTelefone_a(txtTelefon_a.getText());
@@ -633,7 +627,9 @@ public class TelaCadastrosEAlteracoes extends javax.swing.JFrame {
             fornecedorRep.salvar(fornecedor);
 
             JOptionPane.showMessageDialog(null, txtNomeFornecedor.getText() + " Alterado com sucesso!");
-
+        }else{
+             JOptionPane.showMessageDialog(null, txtNomeProduto.getText() + " fornecedor nao selecionado ");   
+            }
         }
         refreshClientesTable();
         refreshFornecedoresTable();
@@ -694,9 +690,11 @@ public class TelaCadastrosEAlteracoes extends javax.swing.JFrame {
 
     private void tblFornecedorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblFornecedorMouseClicked
         int linha = tblFornecedor.getSelectedRow();
-
+        txtIdFornecedor.setText(tblFornecedor.getValueAt(linha, 0).toString());
         txtNomeFornecedor.setText(tblFornecedor.getValueAt(linha, 1).toString());
         txtCnpj.setText(tblFornecedor.getValueAt(linha, 2).toString());
+        txtTelefon_a.setText(tblFornecedor.getValueAt(linha, 3).toString());
+        txtTelefone_b.setText(tblFornecedor.getValueAt(linha, 4).toString());
     }//GEN-LAST:event_tblFornecedorMouseClicked
 
     private void txtNomeClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeClienteActionPerformed
@@ -706,10 +704,6 @@ public class TelaCadastrosEAlteracoes extends javax.swing.JFrame {
     private void txtNomeProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeProdutoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNomeProdutoActionPerformed
-
-    private void txtTelefon_aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelefon_aActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtTelefon_aActionPerformed
 
     /**
      * @param args the command line arguments
@@ -769,11 +763,6 @@ public class TelaCadastrosEAlteracoes extends javax.swing.JFrame {
     private javax.swing.JButton btnConfirmCadastrar;
     private javax.swing.JButton btnDeletar;
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -790,6 +779,7 @@ public class TelaCadastrosEAlteracoes extends javax.swing.JFrame {
     private javax.swing.JTextField txtCPFCliente;
     private javax.swing.JTextField txtCnpj;
     private javax.swing.JTextField txtIdClientes;
+    private javax.swing.JTextField txtIdFornecedor;
     private javax.swing.JTextField txtIdProdutos;
     private javax.swing.JTextField txtNomeCliente;
     private javax.swing.JTextField txtNomeFornecedor;

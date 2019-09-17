@@ -41,7 +41,7 @@ public class ProdutoInterface extends AbstractTableModel {
                 return produtos.get(rowIndex).getPrecoCusto();
             case 4:
                 return produtos.get(rowIndex).getPrecoVenda();
-                
+            
         }
         return null;
 
